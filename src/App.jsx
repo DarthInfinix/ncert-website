@@ -33,7 +33,7 @@ const App = () => {
                 <img src="https://picsum.photos/50" alt="logo" />
                 <img src="https://picsum.photos/50" alt="logo" />
                 </div>
-                <p> EMAIL: ABCD@XYZ.COM</p>
+                <p> EMAIL: ABCD@XYZs.COM</p>
             </div>
             <div className="right">
                 <div className="acknowledgement">
