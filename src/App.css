@@ -1,0 +1,384 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600&display=swap'); 
+
+body {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: #002648;
+  overflow-x: hidden;
+  font-family: 'Montserrat';
+}
+
+.background {
+  width: 110%;
+  position: absolute;
+  top: 0; 
+  left: -10px;
+  z-index: -2;
+}
+
+/* .ncert-logo {
+  position: absolute; */
+/* } */
+.ncert {
+  font-family: 'montserrat';
+  font-weight: bold;
+  color: white;
+  font-size: 5rem;
+
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-side-1 {
+  display: flex;
+  gap: 1rem;
+  flex: 1;
+}
+
+.nav-side-2 ul{
+  display: flex;
+  gap: 4rem;  
+  font-family: "montserrat";
+  font-weight: bold;
+  font-size: 2rem;
+  color: white;
+
+
+}
+
+.nav-side-2 {
+display: flex;
+margin-top: 1rem;
+flex: 1;
+justify-content: flex-end;
+}
+.hero-ncert-logo {
+width: 10rem;
+}
+
+.hero {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.pdf-button {
+width: 197px;
+height: 48px;
+
+background: #FFE600;
+border-radius: 7px;
+}
+.about-button {
+  
+width: 197px;
+height: 48px;
+
+background: #1eff00;
+border-radius: 7px;
+}
+.notices {
+width: 197px;
+height: 48px;
+
+background: #FFE600;
+border-radius: 7px;
+
+}
+
+.hero-button-container ul {
+  margin-top: 3rem;
+display: flex;
+justify-content: space-evenly;
+
+}
+
+.hero-button-container li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'montserrat';
+  font-size: 1rem;
+  font-weight: bold;
+}
+.pdf-line, .notice-line {
+margin-left: 1rem;
+width: 1px;
+height: 47px;
+
+background-color: white ;
+}
+
+.about-line {
+  margin-left: 1rem;
+  width: 1px;
+  height: 47px;
+  
+  background-color: rgb(26, 221, 0) ;
+  }
+  
+.hero-ncert-logo {
+  padding-bottom: 10rem;
+}
+
+@media (max-width:1100px) {
+.hero-ncert-logo{ padding:0  ;
+} 
+
+.ncert-logo {
+  width: 4rem;
+  height: 4rem;
+}
+
+.ncert-name {
+   
+  display: flex;
+  align-items: center;
+
+}
+.ncert {
+  font-size: 1rem;
+}
+
+.nav-side-2  li{
+  font-size: 1rem;
+}
+}
+
+@media (max-width: 480px) {
+  .nav-side-2 {
+    display: none;
+  }
+.nav-side-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ncert-logo {
+width: 1rem;
+height: 1rem;
+}
+
+.hero-ncert-logo {
+  width: 3rem;
+}
+.hero-button-container  li{
+  font-size: xx-small;
+}
+
+.pdf-button, .about-button, .notices {
+  width: 4rem;
+  height: 2rem;
+}
+
+.pdf-line, .about-line, .notice-line {
+  display: none ;
+}
+}
+
+.mission-background-container {
+margin-top: 10rem;
+  display: flex;
+  color: white;
+  font-weight: bold;
+
+  
+  justify-content: space-between;
+}
+
+.mission-right {
+  width: 40%;
+  /* flex: 1; */
+  text-align: center;
+}
+
+.mission-right h1 {
+  font-size: 2rem;
+}
+
+.mission-image {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+.vision-wrapper {
+  margin-top: 10rem;
+  display: flex;
+  flex: 1;
+}
+.vision-text {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  width: 40%;
+  text-align: center;
+}
+
+.vision-image {
+width: 60%;
+display: flex;
+justify-content: center; 
+}
+.image-wrapper {
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+gap: 0;
+}
+.management-image {
+  display: grid;
+  justify-items: center;
+}
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.hamburger {
+  display: none;
+}
+.swiper-slide {
+  text-align: center;
+
+color: white;
+display: flex;
+flex-direction: column;
+gap: 3rem;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide p {
+  width: 40%;
+}
+
+.management-wrapper h1 {
+  color: white;
+  text-align: center;
+  margin-top: 10rem;
+}
+
+.news-wrapper {
+background: rgba(255, 255, 255, 0.173);
+backdrop-filter: blur(10px);
+box-shadow: (0 0 10px black);
+  border: 1px white solid;
+  margin: 0 3rem;
+  border-radius: 10px;
+  margin-top: 10rem;
+}
+.heading {
+  text-align: center;
+  color: white;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+.hamburger-revealed {
+  display: inherit;
+}
+.news-list {
+  height: 80vh;
+  overflow: scroll;
+}
+.news-blurb {
+  transition: .4s;
+  padding: 3rem 0;
+}
+.news-blurb:hover {
+ background-color: rgba(164, 164, 164, 0.445)
+}
+
+.footer-wrapper {
+  display: flex;
+  margin-top: 10rem;
+}
+.right{
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+}
+.acknowledgement {
+  width: 40%;
+}
+
+.left {
+  width: 60vw;
+  color: white;
+}
+.socials-wrapper {
+  display: flex;
+  gap: 1rem;
+  flex: 1;
+  color: white;
+}
+.socials-wrapper  img{
+  border-radius: 100%;
+}
+
+
+@media (max-width:480px) {
+  body {
+    overflow-x: hidden;
+  }
+  .mission-background-container  {
+    flex-direction: column ;
+align-items: center;
+  }
+  .vision-wrapper {
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .news-wrapper {
+    margin: 0;
+    margin-top: 3rem;
+    font-size: .5rem;
+    width: 100%;
+    text-align: center;
+  }
+  .footer-wrapper {
+    flex-direction: column;
+  }
+
+  .right{
+    width: auto
+  }
+  .mission-background-container {
+    margin: 1rem 0;
+  }
+  .hero-ncert-logo {
+    display: none;
+  }
+  .hero {
+    margin: 0;
+  }
+.vision-wrapper {
+  gap: 1rem;
+}
+.hamburger {
+  display: inline;
+}
+}
